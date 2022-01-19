@@ -1,0 +1,23 @@
+NVIrpackages 0.1.0 - (2022-01-19)
+
+First release:
+
+Keeps a table of the R-packages in NVIverse. The current packages are:
+
+- NVIconfig
+
+- NVIdb
+
+- NVIpretty
+
+- NVIbatch
+
+- OKplan
+
+- OKcheck
+
+- NVIcheckmate
+
+- NVIpackager
+
+- NVIrpackages
