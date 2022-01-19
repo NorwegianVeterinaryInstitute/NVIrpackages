@@ -1,2 +1,92 @@
-# NVIrpackages
-Keeps a table with NVIverse r-packages
+# NVIrpackages: Keeps a Table of the R-Packages in NVIverse
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+-   [Overview](#overview)
+-   [Installation](#installation)
+-   [Usage](#usage)
+-   [Copyright and license](#copyright-and-license)
+-   [Contributing](#contributing)
+
+## Overview
+
+`NVIrpackages`keeps a table of the R-Packages in NVIverse. The table
+includes also meta data for the packages. The information is used in all
+NVIverse packages when generating vignettes and in ‘NVIbatch’ in
+functions that use a list of NVIverse packages. This table is keept in a
+separate package to avoid circular dependencies between packages in
+NVIverse.
+
+`NVIrpackages` is part of `NVIverse`, a collection of R-packages with
+tools to facilitate data management and data reporting at the Norwegian
+Veterinary Institute (NVI). The NVIverse consists of the following
+packages: NVIconfig, NVIdb, NVIpretty, NVIbatch, OKplan, OKcheck,
+NVIcheckmate, NVIpackager, NVIrpackages. See the vignette “Contribute to
+NVIrpackages” for more information.
+
+## Installation
+
+`NVIrpackages` is available at
+[GitHub](https://github.com/NorwegianVeterinaryInstitute). To install
+`NVIrpackages` you will need:
+
+-   R version > 4.0.0
+-   R package `remotes`
+-   Rtools 4.0
+
+First install and attach the `remotes` package.
+
+    install.packages("remotes")
+    library(remotes)
+
+To install (or update) the `NVIrpackages` package, run the following
+code:
+
+    remotes::install_github("NorwegianVeterinaryInstitute/NVIrpackages")
+        upgrade = FALSE,
+        build = TRUE,
+        build_manual = TRUE)
+
+## Usage
+
+The `NVIrpackages` package needs to be attached.
+
+    library(NVIrpackages)
+
+`NVIrpackages` keeps a table of the R-Packages in NVIverse. The table
+includes also meta data for the packages. The information is used in all
+NVIverse packages when generating vignettes and in ‘NVIbatch’ in
+functions that use a list of NVIverse packages. This table is keept in a
+separate package to avoid circular dependencies between packages in
+NVIverse.
+
+The full list of all available functions and datasets can be accessed by
+typing
+
+    help(package = "NVIrpackages")
+
+Please check the NEWS for information on new features, bug fixes and
+other changes.
+
+## Copyright and license
+
+Copyright (c) 2022 Norwegian Veterinary Institute.  
+Licensed under the BSD\_3\_clause License. See
+[License](https://github.com/NorwegianVeterinaryInstitute/NVIrpackages/blob/main/LICENSE)
+for details.
+
+## Contributing
+
+Contributions to develop `NVIrpackages` is highly appreciated. There are
+several ways you can contribute to this project: ask a question, propose
+an idea, report a bug, improve the documentation, or contribute code.
+The vignette “Contribute to NVIrpackages” gives more information.
+
+------------------------------------------------------------------------
+
+<!-- Code of conduct -->
+
+Please note that the NVIrpackages project is released with a
+[Contributor Code of
+Conduct](https://github.com/NorwegianVeterinaryInstitute/NVIrpackages/blob/main/CODE_OF_CONDUCT.md).
+By contributing to this project, you agree to abide by its terms.
