@@ -75,7 +75,8 @@ management and data reporting at the Norwegian Veterinary Institute
 </tbody>
 </table>
 
-## How you can contribute
+How you can contribute
+----------------------
 
 There are several ways you can contribute to this project: ask a
 question, propose an idea, report a bug, improve the documentation, or
@@ -141,7 +142,8 @@ list](https://github.com/NorwegianVeterinaryInstitute/NVIrpackages/issues)
 and leave a comment on the things you want to work on. See also the
 development guidelines below.
 
-## Development guidelines
+Development guidelines
+----------------------
 
 If you want to contribute code, you are welcome to do so. Please try to
 adhere to some principles and style convention used for
@@ -151,11 +153,20 @@ adhere to some principles and style convention used for
     The use of base functions is much appreciated.
 
 -   New code should generally follow the tidyverse [style
-    guide](http://style.tidyverse.org). I recommend to use the
-    [`styler`](https://CRAN.R-project.org/package=styler) package to
-    apply spaces: `styler::style_file(filename, scope = "spaces")`.
-    Please don’t restyle code that has nothing to do with your pull
-    request.
+    guide](http://style.tidyverse.org) with some modifications.
+
+    -   use snake\_case for variable names, column names, function names
+        etc.
+    -   function names should start with a verb and should be
+        descriptive and can be long. Avoid strange abbreviations.
+    -   to indent the code you may use the short cut keys Ctrl+a (select
+        all) and Ctrl+i (indent) when you are in R-studio.
+    -   I recommend to use the
+        [`styler`](https://CRAN.R-project.org/package=styler) package to
+        apply spaces:
+        `styler::style_file(filename, scope = c("spaces", "line_breaks"))`.
+        Please don’t restyle code that has nothing to do with your pull
+        request.
 
 -   You should add a bullet point to `NEWS` motivating the change.
 
@@ -203,13 +214,15 @@ The start of commit messages should be one of the following:
 
 Do not capitalize the first letter.
 
-## Code of conduct
+Code of conduct
+---------------
 
 Please note that this project is released with a [Contributor Code of
 Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html).
 By participating to this project, you agree to abide by its terms.
 
-## References
+References
+----------
 
 This document is adapted from a
 [template](https://gist.github.com/peterdesmet/e90a1b0dc17af6c12daf6e8b2f044e7c)
