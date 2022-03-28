@@ -1,4 +1,5 @@
-# NVIrpackages: Keeps a Table of the R-Packages in NVIverse
+NVIrpackages: Keeps a Table of the R-Packages in NVIverse
+=========================================================
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
@@ -8,7 +9,8 @@
 -   [Copyright and license](#copyright-and-license)
 -   [Contributing](#contributing)
 
-## Overview
+Overview
+--------
 
 `NVIrpackages`keeps a table of the R-Packages in NVIverse. The table
 includes also meta data for the packages. The information is used in all
@@ -24,13 +26,14 @@ packages: NVIconfig, NVIdb, NVIpretty, NVIbatch, OKplan, OKcheck,
 NVIcheckmate, NVIpackager, NVIrpackages. See the vignette “Contribute to
 NVIrpackages” for more information.
 
-## Installation
+Installation
+------------
 
 `NVIrpackages` is available at
 [GitHub](https://github.com/NorwegianVeterinaryInstitute). To install
 `NVIrpackages` you will need:
 
--   R version > 4.0.0
+-   R version &gt; 4.0.0
 -   R package `remotes`
 -   Rtools 4.0
 
@@ -42,12 +45,13 @@ First install and attach the `remotes` package.
 To install (or update) the `NVIrpackages` package, run the following
 code:
 
-    remotes::install_github("NorwegianVeterinaryInstitute/NVIrpackages")
+    remotes::install_github("NorwegianVeterinaryInstitute/NVIrpackages",
         upgrade = FALSE,
         build = TRUE,
         build_manual = TRUE)
 
-## Usage
+Usage
+-----
 
 The `NVIrpackages` package needs to be attached.
 
@@ -68,14 +72,16 @@ typing
 Please check the NEWS for information on new features, bug fixes and
 other changes.
 
-## Copyright and license
+Copyright and license
+---------------------
 
 Copyright (c) 2022 Norwegian Veterinary Institute.  
 Licensed under the BSD\_3\_clause License. See
 [License](https://github.com/NorwegianVeterinaryInstitute/NVIrpackages/blob/main/LICENSE)
 for details.
 
-## Contributing
+Contributing
+------------
 
 Contributions to develop `NVIrpackages` is highly appreciated. There are
 several ways you can contribute to this project: ask a question, propose
