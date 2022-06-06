@@ -6,7 +6,7 @@
 \alias{NVIrpackages-package}
 \title{NVIrpackages: Keeps a Table of the R-Packages in NVIverse}
 \description{
-Keeps a table of the R-Packages in NVIverse. The table includes also meta data for the packages. The information is used in all NVIverse packages when generating vignettes and in 'NVIbatch' in functions that use a list of NVIverse packages. This table is keept in a separate package to avoid circular dependencies between packages in NVIverse.
+Keeps a table of the R-Packages in NVIverse. The table includes also meta data for the packages. The information is used in all NVIverse packages when generating vignettes and in 'NVIbatch' in functions that use a list of NVIverse packages. This table is kept in a separate package to avoid circular dependencies between packages in NVIverse.
 }
 \seealso{
 Useful links:

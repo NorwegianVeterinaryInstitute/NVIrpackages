@@ -14,13 +14,19 @@ NVIpkg <- params$NVIpkg
 # NVIpkg <- stringi::stri_extract_last_words(usethis::proj_path())
 NVIpkg_inline <- paste0("`", NVIpkg, "`")
 
+# If hexagon sticker logo exist, include in README.md
+logo_path <- ""
+if (file.exists(paste0("./man/figures/", NVIpkg, "_logo.png"))) {
+  logo_path <- paste0(' <img src="man/figures/', NVIpkg, '_logo.png" align="right" height="138" />')
+}
+
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
 ```
 
-`r paste0(NVIpkg, ": ", desc::desc_get_field(key = "Title"))`
+`r paste0(NVIpkg, ": ", desc::desc_get_field(key = "Title"), logo_path)`  
 ================
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -52,6 +58,8 @@ description <- desc::desc_get_field(key = "Description")
 
 `r paste(NVIpkg_inline, 
    sub(substr(description,1,1), tolower(substr(description,1,1)), description))`
+   
+In addition, the package include the hexagon sticker logos for the packages were these have been created. When a logo has been created or updated, use `NVIpackager::update_logo` to include the logo in the package. Thereafter, you must update the README-file with `NVIpackager::document_NVIpkg` with the argument `readme = TRUE`.
 
 ```{r child=system.file('templates', "README_usage_help.Rmd", package = "NVIpackager")}
 ```

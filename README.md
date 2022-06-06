@@ -13,7 +13,7 @@
 `NVIrpackages`keeps a table of the R-Packages in NVIverse. The table
 includes also meta data for the packages. The information is used in all
 NVIverse packages when generating vignettes and in ‘NVIbatch’ in
-functions that use a list of NVIverse packages. This table is keept in a
+functions that use a list of NVIverse packages. This table is kept in a
 separate package to avoid circular dependencies between packages in
 NVIverse.
 
@@ -42,7 +42,7 @@ First install and attach the `remotes` package.
 To install (or update) the `NVIrpackages` package, run the following
 code:
 
-    remotes::install_github("NorwegianVeterinaryInstitute/NVIrpackages")
+    remotes::install_github("NorwegianVeterinaryInstitute/NVIrpackages",
         upgrade = FALSE,
         build = TRUE,
         build_manual = TRUE)
@@ -56,9 +56,15 @@ The `NVIrpackages` package needs to be attached.
 `NVIrpackages` keeps a table of the R-Packages in NVIverse. The table
 includes also meta data for the packages. The information is used in all
 NVIverse packages when generating vignettes and in ‘NVIbatch’ in
-functions that use a list of NVIverse packages. This table is keept in a
+functions that use a list of NVIverse packages. This table is kept in a
 separate package to avoid circular dependencies between packages in
 NVIverse.
+
+In addition, the package include the hexagon sticker logos for the
+packages were these have been created. When a logo has been created or
+updated, use `NVIpackager::update_logo` to include the logo in the
+package. Thereafter, you must update the README-file with
+`NVIpackager::document_NVIpkg` with the argument `readme = TRUE`.
 
 The full list of all available functions and datasets can be accessed by
 typing
