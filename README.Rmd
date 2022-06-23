@@ -58,6 +58,8 @@ description <- desc::desc_get_field(key = "Description")
 
 `r paste(NVIpkg_inline, 
    sub(substr(description,1,1), tolower(substr(description,1,1)), description))`
+   
+In addition, the package include the hexagon sticker logos for the packages were these have been created. When a logo has been created or updated, use `NVIpackager::update_logo` to include the logo in the package. Thereafter, you must update the README-file with `NVIpackager::document_NVIpkg` with the argument `readme = TRUE`.
 
 ```{r child=system.file('templates', "README_usage_help.Rmd", package = "NVIpackager")}
 ```

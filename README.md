@@ -1,5 +1,4 @@
-NVIrpackages: Keeps a Table of the R-Packages in NVIverse
-=========================================================
+# NVIrpackages: Keeps a Table of the R-Packages in NVIverse
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
@@ -9,13 +8,12 @@ NVIrpackages: Keeps a Table of the R-Packages in NVIverse
 -   [Copyright and license](#copyright-and-license)
 -   [Contributing](#contributing)
 
-Overview
---------
+## Overview
 
 `NVIrpackages`keeps a table of the R-Packages in NVIverse. The table
 includes also meta data for the packages. The information is used in all
 NVIverse packages when generating vignettes and in ‘NVIbatch’ in
-functions that use a list of NVIverse packages. This table is keept in a
+functions that use a list of NVIverse packages. This table is kept in a
 separate package to avoid circular dependencies between packages in
 NVIverse.
 
@@ -26,14 +24,13 @@ packages: NVIconfig, NVIdb, NVIpretty, NVIbatch, OKplan, OKcheck,
 NVIcheckmate, NVIpackager, NVIrpackages. See the vignette “Contribute to
 NVIrpackages” for more information.
 
-Installation
-------------
+## Installation
 
 `NVIrpackages` is available at
 [GitHub](https://github.com/NorwegianVeterinaryInstitute). To install
 `NVIrpackages` you will need:
 
--   R version &gt; 4.0.0
+-   R version > 4.0.0
 -   R package `remotes`
 -   Rtools 4.0
 
@@ -50,8 +47,7 @@ code:
         build = TRUE,
         build_manual = TRUE)
 
-Usage
------
+## Usage
 
 The `NVIrpackages` package needs to be attached.
 
@@ -60,9 +56,15 @@ The `NVIrpackages` package needs to be attached.
 `NVIrpackages` keeps a table of the R-Packages in NVIverse. The table
 includes also meta data for the packages. The information is used in all
 NVIverse packages when generating vignettes and in ‘NVIbatch’ in
-functions that use a list of NVIverse packages. This table is keept in a
+functions that use a list of NVIverse packages. This table is kept in a
 separate package to avoid circular dependencies between packages in
 NVIverse.
+
+In addition, the package include the hexagon sticker logos for the
+packages were these have been created. When a logo has been created or
+updated, use `NVIpackager::update_logo` to include the logo in the
+package. Thereafter, you must update the README-file with
+`NVIpackager::document_NVIpkg` with the argument `readme = TRUE`.
 
 The full list of all available functions and datasets can be accessed by
 typing
@@ -72,16 +74,14 @@ typing
 Please check the NEWS for information on new features, bug fixes and
 other changes.
 
-Copyright and license
----------------------
+## Copyright and license
 
 Copyright (c) 2022 Norwegian Veterinary Institute.  
 Licensed under the BSD\_3\_clause License. See
 [License](https://github.com/NorwegianVeterinaryInstitute/NVIrpackages/blob/main/LICENSE)
 for details.
 
-Contributing
-------------
+## Contributing
 
 Contributions to develop `NVIrpackages` is highly appreciated. There are
 several ways you can contribute to this project: ask a question, propose
