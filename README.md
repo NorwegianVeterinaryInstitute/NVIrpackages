@@ -20,9 +20,9 @@ NVIverse.
 `NVIrpackages` is part of `NVIverse`, a collection of R-packages with
 tools to facilitate data management and data reporting at the Norwegian
 Veterinary Institute (NVI). The NVIverse consists of the following
-packages: NVIconfig, NVIdb, NVIpretty, NVIbatch, OKplan, OKcheck,
-NVIcheckmate, NVIpackager, NVIrpackages. See the vignette “Contribute to
-NVIrpackages” for more information.
+packages: NVIconfig, NVIdb, NVIspatial, NVIpretty, NVIbatch, OKplan,
+OKcheck, NVIcheckmate, NVIpackager, NVIrpackages. See the vignette
+“Contribute to NVIrpackages” for more information.
 
 ## Installation
 

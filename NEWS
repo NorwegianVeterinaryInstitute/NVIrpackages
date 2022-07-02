@@ -1,14 +1,24 @@
+NVIrpackages 0.3.0 - (2022-07-02)
+----------------------------------
+
+New features:
+
+- Includes hexagon sticker logo for NVIbatch.
+
+- Included NVIspatial in NVIpackages.
+
+
 NVIrpackages 0.2.0 - (2022-06-06)
 ----------------------------------
 
 New features:
 
-- Include hexagon sticker logos for NVIdb, NVIcheckmate and NVIdata.
+- Includes hexagon sticker logos for NVIdb, NVIcheckmate and NVIdata.
 
 
 Other changes:
 
-- Updated README
+- Updated README.
 
 
 NVIrpackages 0.1.0 - (2022-01-19)
