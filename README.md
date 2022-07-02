@@ -30,7 +30,7 @@ OKcheck, NVIcheckmate, NVIpackager, NVIrpackages. See the vignette
 [GitHub](https://github.com/NorwegianVeterinaryInstitute). To install
 `NVIrpackages` you will need:
 
--   R version &gt; 4.0.0
+-   R version > 4.0.0
 -   R package `remotes`
 -   Rtools 4.0
 
