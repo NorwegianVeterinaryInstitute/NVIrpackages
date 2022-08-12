@@ -1,0 +1,102 @@
+---
+output: 
+  rmarkdown::html_vignette:
+    keep_md: true
+md_document:
+  variant: markdown_github
+  
+title: "Installation of NVIverse packages"
+
+vignette: >
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteIndexEntry{Installation of NVIverse packages}
+  %\VignetteEncoding
+  
+---
+
+## NVIverse packages
+`NVIverse`, a collection of R-packages with tools to facilitate data management and data reporting at the Norwegian Veterinary Institute (NVI). 
+```{r echo = FALSE, results = 'asis'}
+# library(NVIrpackages)
+knitr::kable(x = NVIrpackages::NVIpackages)
+```
+This document provides a step-by-step guideline for installing the R-package NVIdb.
+
+The guideline has been tested for R version < 4.0.
+
+## Requirements
+
+-	A personal GitHub account
+-	To be member of the organisation NorwegianVeterinaryInstitute at GitHub
+-	A personal access token (PAT) for downloading packages from GitHub
+-	R version > 4.0.0
+-	R packages `devtools` and `remotes`
+-	`Rtools`
+
+## Setting up GitHub
+Setting up a personal GitHub account
+See https://help.github.com/en/github/getting-started-with-github/signing-up-for-github
+
+Membership in the Github organisation NorwegianVeterinaryInstitute
+To be member of NorwegianVeterinaryInstitute make contact with the administrator Karin Lagesen (Karin.Lagesen@vetinst.no).
+
+### Generating a personal access token to GitHub
+You need a personal access token (PAT) with sufficient rights for packages. 
+
+1. Go to your personal GitHub account and chose Settings 
+
+2. Thereafter choose
+1.	Developer settings (bottom left)
+2.	Personal access tokens
+3.	Generate new token
+
+3. After entering your password to your GitHub account, you will get a form where you can chose settings for your PAT. I have not experimented with different settings, but the setting below works.
+Select: repo, write:packages, read:packages, and delete:packages.
+
+4. After clicking on Generate token you get a screen like below. The PAT is displayed in the green field. Click on the symbol for copying just to the right of the PAT and save the PAT a safe place for later use.
+
+
+## Setting up R
+You need to set up R so that it can download and build packages from GitHub.
+
+R version > 4.0.0
+You need R version > 4.0.0. This is because the package that downloads from GitHub needs to send the request in a format that is supported from version 4.0.0.
+
+You can install the latest version of R from the VI software portal (http://software.vetinst.no/).
+
+
+### R-packages
+You need "devtools" and "remote" to install R-packages from GitHub. When you install "devtools", "remotes" will also be installed.
+
+Run the R-command
+install.packages("devtools")
+
+
+## Install Rtools
+Rtools is a collection of resources for building packages for R under windows.
+
+Go to https://cran.r-project.org/bin/windows/Rtools/
+
+Download the version of Rtools according to your version of R, see information on the page.
+
+ 
+
+After downloading, open the file to install the programme. Accept all standard settings. Administrator rights are not required.
+
+ 
+
+## Installation of NVIverse packages
+The following R-commands should install the NVIdb package on your computer.
+
+library(devtools)
+
+remotes::install_github("NorwegianVeterinaryInstitute/NVIdb", 
+                                             auth_token = "PAT"
+                                             upgrade = FALSE, 
+                                             build = TRUE,
+                                             build_vignette = TRUE)
+
+where PAT is your personal access token.
+
+
+If you need more control on the installation of the package, for examples the path of the library it should be installed, you may check out the parameters for the function.  
