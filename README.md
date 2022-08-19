@@ -1,4 +1,4 @@
-# NVIrpackages: Keeps a Table of the R-Packages in NVIverse
+# NVIrpackages: Keeps a Table of the R packages in NVIverse
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
@@ -10,12 +10,12 @@
 
 ## Overview
 
-`NVIrpackages`keeps a table of the R-Packages in NVIverse. The table
+`NVIrpackages`keeps a table of the R packages in `NVIverse`. The table
 includes also meta data for the packages. The information is used in all
-NVIverse packages when generating vignettes and in ‘NVIbatch’ in
-functions that use a list of NVIverse packages. This table is kept in a
-separate package to avoid circular dependencies between packages in
-NVIverse.
+NVIverse packages when generating vignettes and in the package
+‘NVIbatch’ in functions that use a list of NVIverse packages. This table
+is kept in a separate package to avoid circular dependencies between
+packages within NVIverse.
 
 `NVIrpackages` is part of `NVIverse`, a collection of R-packages with
 tools to facilitate data management and data reporting at the Norwegian
@@ -32,7 +32,7 @@ OKcheck, NVIcheckmate, NVIpackager, NVIrpackages. See the vignette
 
 -   R version > 4.0.0
 -   R package `remotes`
--   Rtools 4.0
+-   Rtools 4.0 or Rtools 4.2 depending on R version
 
 First install and attach the `remotes` package.
 
@@ -45,7 +45,7 @@ code:
     remotes::install_github("NorwegianVeterinaryInstitute/NVIrpackages",
         upgrade = FALSE,
         build = TRUE,
-        build_manual = TRUE)
+        build_vignettes = TRUE)
 
 ## Usage
 
@@ -53,12 +53,12 @@ The `NVIrpackages` package needs to be attached.
 
     library(NVIrpackages)
 
-`NVIrpackages` keeps a table of the R-Packages in NVIverse. The table
+`NVIrpackages` keeps a table of the R packages in `NVIverse`. The table
 includes also meta data for the packages. The information is used in all
-NVIverse packages when generating vignettes and in ‘NVIbatch’ in
-functions that use a list of NVIverse packages. This table is kept in a
-separate package to avoid circular dependencies between packages in
-NVIverse.
+NVIverse packages when generating vignettes and in the package
+‘NVIbatch’ in functions that use a list of NVIverse packages. This table
+is kept in a separate package to avoid circular dependencies between
+packages within NVIverse.
 
 In addition, the package include the hexagon sticker logos for the
 packages were these have been created. When a logo has been created or
@@ -86,7 +86,9 @@ for details.
 Contributions to develop `NVIrpackages` is highly appreciated. There are
 several ways you can contribute to this project: ask a question, propose
 an idea, report a bug, improve the documentation, or contribute code.
-The vignette “Contribute to NVIrpackages” gives more information.
+See [Contribute to
+NVIrpackages](https://github.com/NorwegianVeterinaryInstitute/NVIrpackages/blob/main/CONTRIBUTING.md)
+for more information.
 
 ------------------------------------------------------------------------
 
