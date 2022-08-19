@@ -31,7 +31,7 @@ NVIpackages <- as.data.frame(rbind(c("NVIconfig",
                                      "Tools to facilitate the development of NVIverse packages"),
                                    c("NVIrpackages",
                                      "Public",
-                                     "Keeps a table of the R-Packages in NVIverse")))
+                                     "Keeps a table of the R packages in NVIverse")))
 colnames(NVIpackages) <- c("Package", "Status", "Description")
 
 # SAVE IN PACKAGE DATA ----
