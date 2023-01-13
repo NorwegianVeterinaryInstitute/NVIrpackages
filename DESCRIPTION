@@ -23,7 +23,6 @@ Language: en-GB
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
 Imports: 
-    checkmate (>= 2.0.0),
     knitr,
     rmarkdown,
     shiny
