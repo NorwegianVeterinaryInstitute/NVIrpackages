@@ -68,17 +68,46 @@ updated, use `NVIpackager::update_logo` to include the logo in the
 package. Thereafter, you must update the README-file with
 `NVIpackager::document_NVIpkg` with the argument `readme = TRUE`.
 
+#### Documentation
+
+##### Help
+
 The full list of all available functions and datasets can be accessed by
 typing
 
     help(package = "NVIrpackages")
+
+##### Vignettes
+
+Consult the vignettes for task-oriented help.
+
+    vignette(package = "NVIrpackages")
+
+Vignettes in package `NVIrpackages`:
+
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Title</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Contribute_to_NVIrpackages</td>
+<td style="text-align: left;">Contribute to NVIrpackages (source, html)</td>
+</tr>
+</tbody>
+</table>
+
+##### NEWS
 
 Please check the NEWS for information on new features, bug fixes and
 other changes.
 
 ## Copyright and license
 
-Copyright (c) 2022 Norwegian Veterinary Institute.  
+Copyright (c) 2022 - 2023 Norwegian Veterinary Institute.  
 Licensed under the BSD\_3\_clause License. See
 [License](https://github.com/NorwegianVeterinaryInstitute/NVIrpackages/blob/main/LICENSE)
 for details.
