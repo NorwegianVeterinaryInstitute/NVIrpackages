@@ -68,7 +68,7 @@ updated, use `NVIpackager::update_logo` to include the logo in the
 package. Thereafter, you must update the README-file with
 `NVIpackager::document_NVIpkg` with the argument `readme = TRUE`.
 
-#### Documentation
+#### Documentation of `NVIrpackages`
 
 ##### Help
 
@@ -85,20 +85,7 @@ Consult the vignettes for task-oriented help.
 
 Vignettes in package `NVIrpackages`:
 
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Item</th>
-<th style="text-align: left;">Title</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Contribute_to_NVIrpackages</td>
-<td style="text-align: left;">Contribute to NVIrpackages (source, html)</td>
-</tr>
-</tbody>
-</table>
+-   Contribute to NVIrpackages (html)
 
 ##### NEWS
 
