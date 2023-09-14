@@ -7,7 +7,8 @@ Authors@R: c(
            comment = c(ORCID = "0000-0002-8695-0378")),
     person("Norwegian Veterinary Institute", role = "cph")
   )
-Description: Keeps a table of the R packages in `NVIverse`. The table includes also
+Description: Keeps a table of the R packages in `NVIverse` and the png-files for
+    the hexagon sticker logos. The table includes also
     meta data for the packages. The information is used in all NVIverse packages 
     when generating vignettes and in the package 'NVIbatch' in functions that use 
     a list of NVIverse packages. This table is kept in a separate package to avoid 
