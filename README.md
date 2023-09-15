@@ -1,4 +1,4 @@
-# NVIrpackages: Keeps a Table of the R packages in NVIverse
+# NVIrpackages: Keeps a Table of the R packages in NVIverse <img src="man/figures/NVIrpackages_logo.png" align="right" height="138" />
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
@@ -68,7 +68,7 @@ updated, use `NVIpackager::update_logo` to include the logo in the
 package. Thereafter, you must update the README-file with
 `NVIpackager::document_NVIpkg` with the argument `readme = TRUE`.
 
-#### Documentation of `NVIrpackages`
+#### Further documentation
 
 ##### Help
 
@@ -89,8 +89,9 @@ Vignettes in package `NVIrpackages`:
 
 ##### NEWS
 
-Please check the NEWS for information on new features, bug fixes and
-other changes.
+Please check the
+[NEWS](https://github.com/NorwegianVeterinaryInstitute/NVIrpackages/blob/main/NEWS)
+for information on new features, bug fixes and other changes.
 
 ## Copyright and license
 
