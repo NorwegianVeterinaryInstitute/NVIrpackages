@@ -32,17 +32,29 @@ for more information.
 [GitHub](https://github.com/NorwegianVeterinaryInstitute). To install
 `NVIrpackages` you will need:
 
--   R version > 4.0.0
+-   R version &gt; 4.0.0
 -   R package `remotes`
--   Rtools 4.0 or Rtools 4.2 depending on R version
+-   Rtools version 4.0, 4.2 or 4.3 depending on R version
 
 First install and attach the `remotes` package.
 
     install.packages("remotes")
     library(remotes)
 
-To install (or update) the `NVIrpackages` package, run the following
-code:
+To install (or update) the `NVIrpackages` package without vignettes, run
+the following code:
+
+    remotes::install_github("NorwegianVeterinaryInstitute/NVIrpackages",
+        upgrade = FALSE,
+        build = TRUE,
+        build_vignettes = FALSE)
+
+To install (or update) the `NVIrpackages` package with vignettes, you
+will need to first install some additional R-packages needed for
+creating the vignettes. Check README to see which vignettes are
+available and eventually install the packages: `rmarkdown`, `knitr`,
+`R.rsp`, and `NVIrpackages` (from GitHub) if they are missing. To
+install the package with the vignettes, run the following code:
 
     remotes::install_github("NorwegianVeterinaryInstitute/NVIrpackages",
         upgrade = FALSE,
