@@ -1,4 +1,4 @@
-NVIrpackages 0.3.0.9000 - (2022-##-##)
+NVIrpackages 0.4.0 - (2023-12-04)
 ----------------------------------
 
 New features:
@@ -8,7 +8,7 @@ New features:
 
 Other changes:
 
-- Updated package documentation, including README installation guidelines, CONTRIBUTING and help.
+- Updated documentation, including README installation guidelines, CONTRIBUTING and help.
 
 
 NVIrpackages 0.3.0 - (2022-07-02)
