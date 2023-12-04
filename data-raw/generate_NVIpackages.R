@@ -23,6 +23,9 @@ NVIpackages <- as.data.frame(rbind(c("NVIconfig",
                                    c("OKcheck",
                                      "Public",
                                      "Tools to facilitate checking of data from national surveillance programmes"),
+                                   # c("NVIdecide",
+                                   #   "Private",
+                                   #   "Tools to facilitate work within the Decide project"),
                                    c("NVIcheckmate",
                                      "Public",
                                      "Extension of checkmate with argument checking adapted for NVIverse"),
@@ -31,8 +34,10 @@ NVIpackages <- as.data.frame(rbind(c("NVIconfig",
                                      "Tools to facilitate the development of NVIverse packages"),
                                    c("NVIrpackages",
                                      "Public",
-                                     "Keeps a table of the R-Packages in NVIverse")))
+                                     "Keeps a table of the R packages in NVIverse")))
 colnames(NVIpackages) <- c("Package", "Status", "Description")
 
 # SAVE IN PACKAGE DATA ----
 usethis::use_data(name = NVIpackages, overwrite = TRUE, internal = FALSE)
+
+rm(list = c("NVIpackages"))

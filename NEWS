@@ -1,3 +1,16 @@
+NVIrpackages 0.4.0 - (2023-12-04)
+----------------------------------
+
+New features:
+
+- Created hexagon sticker logo for NVIconfig, NVIpackager, NVIrpackages, OKcheck and OKplan.
+
+
+Other changes:
+
+- Updated documentation, including README installation guidelines, CONTRIBUTING and help.
+
+
 NVIrpackages 0.3.0 - (2022-07-02)
 ----------------------------------
 
@@ -24,9 +37,7 @@ Other changes:
 NVIrpackages 0.1.0 - (2022-01-19)
 ----------------------------------
 
-First release:
-
-Keeps a table of the R-packages in NVIverse. The current packages are:
+First release: Keeps a table of the R-packages in NVIverse. The current packages are:
 
 - NVIconfig
 

@@ -3,27 +3,30 @@
 \docType{data}
 \name{NVIpackages}
 \alias{NVIpackages}
-\title{Data: Description of the NVIverse packages .}
+\title{Data: Description of the \code{NVIverse} packages .}
 \format{
 A data frame with 3 variables:
 \describe{
-\item{Package}{name of the NVIverse package.}
+\item{Package}{name of the \code{NVIverse} package.}
 \item{Status}{Whether the package is "Private" or "Public".}
 \item{Description}{The short description of the package as given in the "Title" field in \code{DESCRIPTION}.}
 }
 }
 \source{
-\code{./data-raw/generate_NVIpackages.R} in package \code{NVIpackager}
+"./data-raw/generate_NVIpackages.R" in package \code{NVIrpackages}.
 }
 \usage{
 NVIpackages
 }
 \description{
-A data frame with key information for the NVIverse packages. The
-information is mainly used as input to \code{CONTRIBUTING.md} and \code{README.Rmd}.
+A data frame listing the \code{NVIverse} packages with some meta data.
+The information is used  in \code{NVIbatch} in functions that use a list of
+\code{NVIverse} packages as input and in all \code{NVIverse} packages to generate
+the text listing the \code{NVIverse} packages in the documents \code{CONTRIBUTING.md}
+and \code{README.Rmd}.
 }
 \details{
-The data frame is generated in \code{./data-raw/generate_NVIpackages.R}.
-Edit this file to update the data frame with changes in the NVIverse packages.
+The data frame is generated in "./data-raw/generate_NVIpackages.R".
+Edit this file to update the data frame with changes in the \code{NVIverse} packages.
 }
 \keyword{datasets}
