@@ -1,7 +1,7 @@
 Package: NVIrpackages
 Title: Keeps a Table of the R packages in NVIverse
-Version: 0.4.0
-Date: 2023-12-04
+Version: 0.5.0
+Date: 2024-04-11
 Authors@R: c(
     person("Petter", "Hopp", , "Petter.Hopp@vetinst.no", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-8695-0378")),
@@ -21,7 +21,7 @@ Depends:
 Encoding: UTF-8
 Language: en-GB
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.1
 Imports: 
 Suggests: 
     covr,
