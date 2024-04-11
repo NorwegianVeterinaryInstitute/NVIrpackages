@@ -1,68 +1,70 @@
-NVIrpackages 0.4.0.9002 - (2024-##-##)
+# NVIrpackages 0.4.0.9002 - (2024-##-##)
 ----------------------------------------
 
-New features:
+## New features:
 
 - Created hexagon sticker logo for NVIpretty and NVIpjsr.
 
 - Included NVIpjsr in NVIpackages. 
 
 
-Bug fixes:
+## Bug fixes:
 
 -
 
 
-Other changes:
+## Other changes:
 
 -
 
 
-BREAKING CHANGES:
+## BREAKING CHANGES:
 
 -
 
 
-NVIrpackages 0.4.0 - (2023-12-04)
+# NVIrpackages 0.4.0 - (2023-12-04)
 ----------------------------------
 
-New features:
+## New features:
 
 - Created hexagon sticker logo for NVIconfig, NVIpackager, NVIrpackages, OKcheck and OKplan.
 
 
-Other changes:
+## Other changes:
 
 - Updated documentation, including README installation guidelines, CONTRIBUTING and help.
 
 
-NVIrpackages 0.3.0 - (2022-07-02)
+# NVIrpackages 0.3.0 - (2022-07-02)
 ----------------------------------
 
-New features:
+## New features:
 
 - Includes hexagon sticker logo for NVIbatch.
 
 - Included NVIspatial in NVIpackages.
 
 
-NVIrpackages 0.2.0 - (2022-06-06)
+# NVIrpackages 0.2.0 - (2022-06-06)
 ----------------------------------
 
-New features:
+## New features:
 
 - Includes hexagon sticker logos for NVIdb, NVIcheckmate and NVIdata.
 
 
-Other changes:
+## Other changes:
 
 - Updated README.
 
 
-NVIrpackages 0.1.0 - (2022-01-19)
+# NVIrpackages 0.1.0 - (2022-01-19)
 ----------------------------------
 
-First release: Keeps a table of the R-packages in NVIverse. The current packages are:
+## First release: 
+
+Keeps a table of the R-packages in NVIverse. The current packages are:
 
 - NVIconfig
 
