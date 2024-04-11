@@ -1,25 +1,10 @@
-# NVIrpackages 0.4.0.9002 - (2024-##-##)
+# NVIrpackages 0.5.0 - (2024-04-11)
 
 ## New features:
 
 - Created hexagon sticker logo for NVIpretty and NVIpjsr.
 
 - Included NVIpjsr in NVIpackages. 
-
-
-## Bug fixes:
-
--
-
-
-## Other changes:
-
--
-
-
-## BREAKING CHANGES:
-
--
 
 
 # NVIrpackages 0.4.0 - (2023-12-04)
